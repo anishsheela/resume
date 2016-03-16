@@ -1,40 +1,43 @@
 %% start of file `template.tex'.
-%% Copyright 2006-2014 Anish Sheela (aneesh.nl@gmail.com), Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2006-2016 Anish Sheela (aneesh.nl@gmail.com), Xavier Danaux (xdanaux@gmail.com).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[12pt,a4paper]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[red]{classic}                % idem
+%\moderncvtheme[red]{classic}                % idem
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 % personal data
 \firstname{Anish}
 \familyname{A}
-%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+%\title{Acquia Certified Drupal Developer}               % optional, remove the line if not wanted
 \address{Anugraha, SMN-52, Konchiravila, Manacaud P. O.}{Thiruvananthapuram-695009}    % optional, remove the line if not wanted
 \mobile{+91-8907509611}                    % optional, remove the line if not wanted
-\phone{+91-471-2459094}                      % optional, remove the line if not wanted
+% \phone{+91-471-2459094}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{aneesh.nl@gmail.com}                      % optional, remove the line if not wanted
 %\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{Freedom is elixr, Freedom is life\\ For people with self-respect,\\ Dependence is worse than death.\\
-\begin{small}
-\textit{- Kumaranasan}
-\end{small}}
+%\quote{Freedom is elixir, Freedom is life\\ For people with self-respect,\\ Dependence is worse than death.\\
+%\begin{small}
+%\textit{- Kumaranasan}
+%\end{small}}
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 %\makeatletter
@@ -52,32 +55,67 @@
 \begin{document}
 \maketitle
 
-\section{Education}
-\cventry{2008--2012}{Bachelor of Technology in Computer Science and
-Engineering}{Mohandas College of Engineering and Technology}{Thiruvananthapuram}{CGPA \textit{6.8}}
-{}
-\cventry{2006--2008}{Higher Secondary}{Govt: S.M.V Model Higher Secondary School}{Thiruvananthapuram}{\textit{82\%}}{}
-\cventry{2000--2006}{High School}{St. Joseph's Higher Secondary School}{Thiruvananthapuram}{\textit{77\%}}{}
+\section{Drupal Specific Skills}
+\cvline{Certification}{\textbf{Acquia Certified Drupal 8 Foundations Exam - 87.5\%}}
+\cvline{Expertise}{
+\begin{itemize}
+\item Multilingual sites, Entities, REST API design, Drupal Commerce
+\item Theming - Responsive designs, Sass, etc.
+\item Custom module development.
+\item Devops - Deployment, Scaling, Maintainence.
+\item Debugging, Coding standards, Best practices, etc.
+\end{itemize}
+}
+\cvline{Community}{
+\begin{itemize}
+\item Current maintainer of search404.
+\item Core contributor (small patches).
+\item \#1 in Malayalam localization.
+\item Drupal Asia 2016 - Participant
+\item DrupalCamp Bangalore - Participant
+\item drupal.org/u/anish.a
+\item drupal.org/u/anish\_zyxware
+\end{itemize}
+}
+
 
 \section{Technical Skills}
-\cvline{Operating System}{GNU/Linux}
-\cvline{Programing Languages}{C, C++, Python, PHP}
+\cvline{Operating System}{GNU/Linux, Mainly Debian Based distros}
+\cvline{Programing Languages}{PHP, Python, C, Ruby}
 \cvline{Database}{MySQL, PostgreSQL}
 \cvline{Version Control}{git}
-\cvline{Web}{HTML, CSS, Javascript}
-\cvline{CMS}{Wordpress, Drupal}
+\cvline{Web}{HTML, CSS, Javascript, Bootstrap (expert), Wordpress}
 \cvline{Utilities}{GIMP, Libre Office, \LaTeX}
-\cvline{Server}{More than 2 years expertise in setting up various debian \& CentOS servers.}
+\cvline{Server}{More than 4 years expertise in setting up various debian \& CentOS servers.}
 \cvline{Hardware}{Good experience in hardware troubleshooting, advanced networking etc.}
-\cvline{Pursuing}{Ruby on Rails}
+%\cvline{Pursuing}{Ruby on Rails, Linux foundation system admin certification}
 
 \section{My Superpowers}
 \cvline{Fast Learner}{I can learn anything easily and in minimum time.}
 \cvline{Problem Solver}{I can fix bugs \& issues fast.}
+\cvline{Basics}{I know how things work, from the basics (usually).}
 \cvline{Social}{Person who is approached by others and vice versa during a situation.}
 \cvline{Simple}{Keeping things simple is my motto.}
+\cvline{Community}{Very active and involved in community activities \& projects.}
 
 \section{Work Experience}
+
+\subsection{Zyxware Technologies Private Limited}
+\cvline{URL}{http://www.zyxware.com}
+\cvline{Job Title}{Senior Software Engineer}
+\cvline{Duration}{2014 August - Present}
+\cvline{Job Description}{Drupal technology expert. I was responsible for the following.
+\begin{itemize}
+\item Working on large drupal projects.
+\item Domain expert on e-commerce and multilingual websites.
+\item Managing servers \& Infrastructure for company as well as clients.
+\item Product design and development from scratch.
+\item Leading a team of 5 people on drupal community contributions.
+\item Working with clients on the role of domain expert.
+\item Interviewing and make decision on hiring new candidates (technical round).
+\end{itemize}
+}
+
 \subsection{Hello Infinity Business Solutions Private Limited}
 \cvline{URL}{http://www.helloinfinity.com}
 \cvline{Job Title}{Co-Founder \& Technical Lead}
@@ -88,144 +126,100 @@ Engineering}{Mohandas College of Engineering and Technology}{Thiruvananthapuram}
 \item Managing servers \& Infrastructure.
 \item Ensure timely closure of projects.
 \item Bringing new business to company.
+\item Coordinating free software contributions and keeping touch with community.
 \end{itemize}
 }
 
 \section{Projects}
-\cvline{Title}{\textbf{FishInGlass Cloud based CRM}}
+
+\cvline{}{\textbf{e-Tendering system for foriegn govenment} | Drupal}
+\cvline{Organization}{Zyxware Technologies Private Limited}
+\cvline{Description}{\small Multilingual e-Tendering system with provision to publish specifications and accept bids. My tasks include
+\begin{itemize}
+\item Fix major bugs and refactor the code.
+\item Add new functionalities, without disturbing existing ones.
+\item Fixing all multilingual issues (localization, internationalization).
+\item Communicating with client and other stakeholders.
+\end{itemize}
+}
+
+\cvline{}{\textbf{Event ticket selling platform} | Drupal, Drupal Commerce}
+\cvline{Organization}{Zyxware Technologies Private Limited}
+\cvline{Description}{\small Ticket procuring and selling platform with millions as turnover. My tasks include
+\begin{itemize}
+\item Designing and implementing anti-price cawling system.
+\item Creating custom reports for customer.
+\item Mobile website for the same using bootstrap.
+\item Bug fixes and Maintainence support.
+\end{itemize}
+}
+
+\cvline{}{\textbf{Geotagger} | Drupal, Entities}
+\cvline{Organization}{Zyxware Technologies Private Limited}
+\cvline{Description}{\small Mobile application to take photos along with geolocation. Connects to any drupal website using REST API (one custom module). My tasks include
+\begin{itemize}
+\item Requirement collection and preparation of SRS.
+\item Technical design of the Mobile \& Webapp.
+\item Implementation with entities, custom fields, gmaps, REST API, etc.
+\item Supporting team on further extension of the system.
+\end{itemize}
+}
+
+\cvline{}{\textbf{High end audio products information and selling platform} | Drupal, Ubercart}
+\cvline{Organization}{Zyxware Technologies Private Limited}
+\cvline{Description}{\small Producer of high end audio devices. Mainly informational website with cool graphics. My tasks include
+\begin{itemize}
+\item Convert existing site to responsive design using bootstrap.
+\item Refactoring the code to make it maintainable.
+\item Additional functionalities requested by client.
+\end{itemize}
+}
+
+\cvline{}{\textbf{IFFK film festival registration management} | Eventival}
+\cvline{Organization}{Kerala Film Academy}
+\cvline{Description}{\small Technical consultant to handle registration process, printing \& distribution of badges for around 17,000 persons in International Film Festival, Kerala.}
+
+\cvline{}{\textbf{FishInGlass Cloud based CRM} | PHP, Custom Framework, Python}
 \cvline{Organization}{Hello Infinity Business Solutions Private Limited}
-\cvline{Platform}{PHP, Custom Framework, Python}
-\cvline{Description}{Top level design of the whole CRM \& Framework. I have also done some important modules regarding this.}
+\cvline{Description}{\small Top level design of the whole CRM \& Framework. Also done some important modules on this.}
 
-\cvline{Title}{\textbf{Job Management System \& Website}}
-\cvline{Organization}{Directus Consultants Private Limited}
-\cvline{Platform}{Drupal}
-\cvline{Description}{\small {Efficient way to track jobs and keep fine grained control over jobs and users. It increased productivity and made management easier.}}
-
-\cvline{Title}{\textbf{Document Management System}}
-\cvline{Organization}{Directus Consultants Private Limited}
-\cvline{Platform}{Alfresco}
-\cvline{Description}{\small Efficient way to manage huge document repository of directus. It provided easy access of documents and access over directus offices across India.}
-
-\cvline{Title}{\textbf{Website \& Members directory}}
-\cvline{Organization}{Indian Institute of Architects, Thiruvananthapuram Chapter}
-\cvline{Platform}{Drupal}
-\cvline{Description}{\small Members directory \& Website to showcase the IIA activities and document the history of IIA, Thiruvananthapuram.}
-
-\cvline{Title}{\textbf{Automation of Cloudamaze Webhosting}}
+\cvline{}{\textbf{Automation of Cloudamaze Webhosting} | WHMCS, WHM/cPanel, Payzippy}
 \cvline{Organization}{Hello Infinity Business Solutions Private Limited}
-\cvline{Platform}{WHMCS, WHM/cPanel, Payzippy}
-\cvline{Description}{\small Automated the hosting \& domain purchases, billing, etc of Cloudamaze, with payment gateway services from payzippy.}
+\cvline{Description}{\small Automated the hosting \& domain purchases, billing, etc of Cloudamaze.}
 
-\cvline{Title}{\textbf{Firewall \& Networking Infrastructure setup}}
+\cvline{}{\textbf{Firewall \& Networking Infrastructure setup} | pfsense, Owncloud, samba}
 \cvline{Organization}{Marunadan Malayali}
-\cvline{Platform}{pfsense, Owncloud}
-\cvline{Description}{\small Increased productivity using super fault tolerant internet connection setup using loadbalancing with pfsense firewall. Upgraded whole infrastucture to be easily manageable. Done along with ManuKrishnan T. V.}
+\cvline{Description}{\small Increased productivity using super fault tolerant internet connection setup using loadbalancing with pfsense firewall. Upgraded whole infrastucture to be easily manageable.}
 
-\cvline{Title}{\textbf{IDSFFK Film festival registration management}}
-\cvline{Organization}{Kerala Chalachithra Academy}
-\cvline{Platform}{Eventival}
-\cvline{Description}{\small Managed to handle registration process, printing \& distribution of badges for around 1000 persons in International Documentary \& Short Film Festival, Kerala}
+\section{Community}
 
-\cvline{Title}{\textbf{CeStIn} : Centralized Student Information system (Academic project)}
-\cvline{Organization}{Mohandas College of Engineering \& Technology}
-\cvline{Platform}{PHP}
-\cvline{Description}{\small \textbf{CeStIn} is a centralized student information system that provides information to students, staff and parents regarding  attendance, exams, assignments, dues, fines, etc and gives proper information and alerts to students. \url{gitorious.org/cestin}}
- 
-\cvline{Title}{\textbf{MCET Blood Donor's Directory}}
-\cvline{Organization}{National Service Scheme, MCET}
-\cvline{Platform}{PHP}
-\cvline{Description}{\small \emph{MCET Blood Donor's Directory}
-is the website that gives information about the voluntary blood donors
-at Mohandas College. It was done as a National Service Scheme activity and has been served numerous patients in need of blood. \url{mcetnss.org/blood} }
+\cvline{SMC}{\small Executive commitee member of Swatantra Malayalam Computing, which works on Indian language computing area.}
+\cvline{FUEL}{\small Part of the expert commitee on standardization of malayalam technical glossary.}
+\cvline{GNOME}{\small GNOME commiter (for malayalam localization) and foundation member.}
+\cvline{Mozilla}{\small Active contributor for Malayalam translation of Firefox, Firefox OS and Firefox Mobile.}
+\cvline{savepoddery}{\small Major role in organizing crowd funding campaign for saving poddery.com.}
+\cvline{debian}{\small Debian package maintainer. Maintains few ruby libraries as a part of diaspora packaging.}
 
-\section{Achievements}
 
-\subsection{Positions Handled}
-\cventry{2013-2014}{GNOME Localization Committer}{Swatantra Malayalam Computing}{}{}
-{Committing the localized files to GNOME after verification, conducting events to find new contributors etc.}
+\section{Education}
+\cventry{2008--2012}{Bachelor of Technology in Computer Science and
+Engineering}{Mohandas College of Engineering and Technology}{Thiruvananthapuram}{CGPA \textit{6.8}}
+{}
+\cventry{2006--2008}{Higher Secondary}{Govt: S.M.V Model Higher Secondary School}{Thiruvananthapuram}{\textit{82\%}}{}
+\cventry{2000--2006}{School}{St. Joseph's Higher Secondary School}{Thiruvananthapuram}{\textit{77\%}}{}
 
-\cventry{2011-2012}{Blood Donation Coordinator}{National Service Scheme}{}{}
-{Tasks include handling and verification of requests, allocating donors, book keeping, conducting awareness classes, camps, etc.}
-
-\cventry{2011}{Organizing Committee member}{Decennial 2012}{}{}
-{My tasks include website design, layout and compilation of proceedings, some print designs, setting up online quiz, etc.}
-
-\cventry{2011}{Organizing Committee member}{Colloquium 2011}{}{}
-{My tasks include website design, layout and compilation of proceedings, co-ordinating event teams etc.}
-
-\cventry{2010}{Design team}{College Magazine 2010}{}{}
-{My tasks include typing, layout \& proofreading of Malayalam articles.}
-
-\cventry{2010-2011}{Trainer}{Software Club}{}{}{Task was to train my juniors on softwares like GNU/Linux, Libre Office, GIMP, etc.}
-
-\subsection{Technical festivals}
-\cventry{2012}{MCET deci}{MCET}{Anad}{}{January 2 \& 7
-\begin{itemize}%
-\item Paper presentation second prize.
-\item Business Idea presentation second prize.
-\item Game Design second prize.
-\item Web Design for mcetdeci.in first prize.
-\item Print Design first prize.
-\end{itemize}}
-
-\cventry{2011}{Impulse 2011}{Muslim Association College of Engineering}{Venjaramoodu}{}{March 25 \& 26
-\begin{itemize}%
-\item Paper presentation second prize.
-\item Coding second prize.
-\item Technical Quiz second prize.
-\end{itemize}}
-
-\cventry{2011}{DotSlash 2011}{College of Engineering and Technology}{Thiruvananthapuram}{}{February 25 \& 26
-\begin{itemize}%
-\item Paper presentation third prize.
-\end{itemize}}
-
-\cventry{2011}{Colloquium 2011}{MCET}{Thiruvananthapuram}{}{February 11 \& 12
-\begin{itemize}%
-\item Game design first prize.
-\item Poster presentation first prize.
-\item Web design second prize.
-\end{itemize}}
-
-\subsection{National Service Scheme}
-\cventry{2010, 2011}{NSS Annual Meet and distribution of awards}{ICET}{Muvattupuzha}{}{Represented my college in NSS Annual Meet and distribution of awards.}
-
-\cventry{2010}{Peer Educator Training}{Loyola College of Social Sciences}{Thiruvananthapuram}{}
-{Three days training and awareness programmes on various activities like voluntary blood donation, HIV AIDS etc conducted by Kerala State AIDS Control Society.}
-
-\cventry{2008-2013}{NSS Camp}{MCET}{Thiruvananthapuram}{}{Participated in 7 day camp conducted at college. Best volunteer at 2008 camp.}
-
-\subsection{Free Software Contributions}
-\cvline{FUEL Project}{Part of expert commitee in standardizing frequently used Malayalam words in mobile computing area.}
-\cvline{Debian Diaspora}{Packaging of diaspora distributed social networking platform to debian.}
-\cvline{Malayalam Localization}{Undertook malayalam localization for various freesoftware projects like gnome, KDE, drupal (top contributor), firefox, diaspora etc.}
-\cvline{Silpa}{Silpa is a platform for hosting free(as in freedom) Indian language processing applications. It is written in python. Working in development team. \emph{www.silpa.org.in}}
-
-\section{Events}
-\cventry{2014}{FUEL \& Firefox review meetup}{Technopark}{Thiruvananthapuram}{}{}
-\cventry{2014}{FOSSMEET}{National Institute of Technology}{Kozhikode}{}{}
-\cventry{2013}{SMC 12 year meet}{Sahithya Academy Hall}{Thrissur}{}{}
-\cventry{2013}{FUEL GIST Conference}{Courtyard Marriot}{Pune}{}{}
-\cventry{2011}{Minidebconf}{MES College of Enginnering}{Malappuram}{}{}
-\cventry{2011}{Business Plan for Entrepreneurs}{Technopark}{Thiruvananthapuram}{}{}
-\cventry{2011}{Entreprenurship Development Programme}{Mohandas College}{Thiruvananthapuram}{}{}
-\cventry{2011}{FOSSMeet}{National Institute of Technology}{Kozhikode}{}{}
-\cventry{2011}{National Conference on Indian Language Computing}{Cochin University of Science and Technology}{Ernakulam}{}{}
-\cventry{2010}{FOSS in Education}{National Institute of Technology}{Kozhikode}{}{}
-\cventry{2010}{Swatantra.in}{St. Joseph's College of Engineering}{Kottayam}{}{}
-\cventry{2009}{SciPy.in}{Technopark}{Thiruvananthapuram}{}{}
-\cventry{2009}{Pycon India}{Indian Institute of Science and Technology}{Bengaluru}{}{}
-\cventry{2009}{Malayalam Computing}{Vailopilli Samskriti Bhavan}{Thiruvananthapuram}{}{}
-\cventry{2008}{Free Software, Free Society}{Mascot Hotel}{Thiruvananthapuram}{}{}
+\section{Outside Work}
+\cvline{Conferences}{I can be found at many free software related conferences as speaker or otherwise.}
+\cvline{Community}{Attending and organizing various community activities.}
+\cvline{Travel}{A long distance ride at my beloved Passion Pro a month.}
+\cvline{Rubiks}{I can be found solving rubiks cube and some of the variants.}
 
 \section{Personal Information}
-\cvline{Date of Birth}{7 April, 1991}
+\cvline{Date of Birth}{7 April, 1990}
 \cvline{Sex}{Male}
 \cvline{Blood Group}{A+ve}
-\cvline{Languages}{Malayalam(Mother Tongue), English, Hindi (Basic)}
+\cvline{Languages}{Malayalam(Mother Tongue), English, Hindi (Basic), Tamil (can speak)}
 
 \end{document}
-
 
 %% end of file `template_en.tex'.
