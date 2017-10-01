@@ -1,5 +1,5 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2016 Anish Sheela (aneesh.nl@gmail.com), Xavier Danaux (xdanaux@gmail.com).
+%% start of file `resume.tex'.
+%% Copyright 2006-2017 Anish Sheela (aneesh.nl@gmail.com), Xavier Danaux (xdanaux@gmail.com).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
@@ -13,14 +13,14 @@
 %\moderncvtheme[red]{classic}                % idem
 
 \moderncvstyle{classic}
-\moderncvcolor{blue}
+\moderncvcolor{orange}
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3cm} %TODO: Adjust						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
@@ -28,7 +28,7 @@
 \firstname{Anish}
 \familyname{A}
 %\title{Acquia Certified Drupal Developer}               % optional, remove the line if not wanted
-\address{Anugraha, SMN-52, Konchiravila, Manacaud P. O.}{Thiruvananthapuram-695009}    % optional, remove the line if not wanted
+\address{Anugraha, SMN-52, Konchiravila, Manacaud P. O.}{Thiruvananthapuram-695009, Kerala, India}
 \mobile{+91-8907509611}                    % optional, remove the line if not wanted
 % \phone{+91-471-2459094}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
@@ -38,6 +38,7 @@
 %\begin{small}
 %\textit{- Kumaranasan}
 %\end{small}}
+%\quote{For detailed online version - anishsheela.com/resume }
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 %\makeatletter
@@ -55,40 +56,44 @@
 \begin{document}
 \maketitle
 
+% TODO: Update section.
 \section{Drupal Specific Skills}
 \cvline{Certification}{\textbf{Acquia Certified Drupal 8 Foundations Exam - 87.5\%}}
-\cvline{Expertise}{
+\cvline{Expertise - Drupal}{
 \begin{itemize}
+\item Drupal 8 (Done basic to moderate websites)
 \item Multilingual sites, Entities, REST API design, Drupal Commerce
-\item Theming - Responsive designs, Sass, etc.
+\item Theming - Bootstrap, Responsive designs, Sass, etc.
 \item Custom module development.
-\item Devops - Deployment, Scaling, Maintainence.
+\item Deployment, Scaling, Maintenance.
 \item Debugging, Coding standards, Best practices, etc.
 \end{itemize}
 }
-\cvline{Community}{
+
+\cvline{Community - Drupal}{
 \begin{itemize}
-\item Current maintainer of search404.
+\item \textbf{https://www.drupal.org/u/anish.a}
+\item Current maintainer of search404, owlcarousel (D8), csv\_txt\_formatter.
+\item Ported or contributed on owlcarousel, disable\_messages, etc.
 \item Core contributor (small patches).
 \item \#1 in Malayalam localization.
-\item Drupal Asia 2016 - Participant
-\item DrupalCamp Bangalore - Participant
-\item drupal.org/u/anish.a
-\item drupal.org/u/anish\_zyxware
+\item DrupalCon - Drupal Asia 2016
+\item DrupalCamp - Pune, Hyderabad, Delhi \& Bangalore
+\item FOSSAsia Singapore - Volunteer
 \end{itemize}
 }
-
 
 \section{Technical Skills}
 \cvline{Operating System}{GNU/Linux, Mainly Debian Based distros}
 \cvline{Programing Languages}{PHP, Python, C, Ruby}
-\cvline{Database}{MySQL, PostgreSQL}
+\cvline{Database}{MySQL, PostgreSQL(beginner)}
 \cvline{Version Control}{git}
 \cvline{Web}{HTML, CSS, Javascript, Bootstrap (expert), Wordpress}
 \cvline{Utilities}{GIMP, Libre Office, \LaTeX}
-\cvline{Server}{More than 4 years expertise in setting up various debian \& CentOS servers.}
-\cvline{Hardware}{Good experience in hardware troubleshooting, advanced networking etc.}
+\cvline{Server}{More than 5 years expertise in setting up various application servers.}
+%\cvline{Hardware}{Good experience in hardware troubleshooting, advanced networking etc.}
 %\cvline{Pursuing}{Ruby on Rails, Linux foundation system admin certification}
+
 
 \section{My Superpowers}
 \cvline{Fast Learner}{I can learn anything easily and in minimum time.}
@@ -100,13 +105,29 @@
 
 \section{Work Experience}
 
+\subsection{Axelerant Technologies}
+\cvline{URL}{https://www.axelerant.com}
+\cvline{Job Title}{Drupal Developer}
+\cvline{Duration}{2016 July - Present}
+\cvline{Job Description}{Drupal technology expert. I was responsible for the following.
+\begin{itemize}
+\item Working on Drupal 7 \& 8 projects.
+\item Maintaining large scale D7 projects.
+\item Architect and develop D8 projects from scratch.
+\item Working with self organized agile teams.
+\item Handling deployments using docker.
+\item Working with testing team for implementation of automated testing (behat).
+\item Working on hiring committee \& take decision on new candidates (technical round).
+\end{itemize}
+}
+
 \subsection{Zyxware Technologies Private Limited}
 \cvline{URL}{http://www.zyxware.com}
 \cvline{Job Title}{Senior Software Engineer}
-\cvline{Duration}{2014 August - Present}
+\cvline{Duration}{2014 August - 2016 July}
 \cvline{Job Description}{Drupal technology expert. I was responsible for the following.
 \begin{itemize}
-\item Working on large drupal projects.
+\item Working on small to large drupal projects.
 \item Domain expert on e-commerce and multilingual websites.
 \item Managing servers \& Infrastructure for company as well as clients.
 \item Product design and development from scratch.
@@ -132,7 +153,46 @@
 
 \section{Projects}
 
-\cvline{}{\textbf{e-Tendering system for foriegn govenment} | Drupal}
+\cvline{}{\textit{Important projects, reverse chronologically sorted}}
+
+\cvline{}{\textbf{Contract Management with Workflow} | Drupal 8}
+\cvline{Organization}{Axelerant Technologies}
+\cvline{Description}{\small Contract management system with workflow and document management. My tasks include
+\begin{itemize}
+\item Take part in architectural design of the project.
+\item Implement the project creation, validation according to requirements
+\item Setting up development environments and workflow.
+\end{itemize}
+}
+
+\cvline{}{\textbf{Medical Device advertorial website} | Drupal 8}
+\cvline{Organization}{Axelerant Technologies}
+\cvline{Description}{\small Website that includes all information on particular medical product. My tasks include
+\begin{itemize}
+\item Take part in architectural design of the project.
+\item Implementing the project (backend).
+\item Setting up development environments and workflow.
+\item Deploying the project in Acquia cloud.
+\item Handling client queries and Making sure the site is HIPPA complaint.
+\end{itemize}
+}
+
+
+\cvline{}{\textbf{Charity website maintenance} | Drupal 7}
+\cvline{Organization}{Axelerant Technologies}
+\cvline{Description}{\small Maintenance of foreign charity website with millions in donations and worldwide presence. My tasks include
+\begin{itemize}
+\item Establish formal developer workflow.
+\item Setting up development environments.
+\item Fix issues raised by client.
+\item Development of new features.
+\item Refactoring existing codebase.
+\item Assistance for automated testing to testing team.
+\end{itemize}
+}
+
+
+\cvline{}{\textbf{e-Tendering system for foreign government} | Drupal 7}
 \cvline{Organization}{Zyxware Technologies Private Limited}
 \cvline{Description}{\small Multilingual e-Tendering system with provision to publish specifications and accept bids. My tasks include
 \begin{itemize}
@@ -143,18 +203,18 @@
 \end{itemize}
 }
 
-\cvline{}{\textbf{Event ticket selling platform} | Drupal, Drupal Commerce}
+\cvline{}{\textbf{Event ticket selling platform} | Drupal 7, Drupal Commerce}
 \cvline{Organization}{Zyxware Technologies Private Limited}
 \cvline{Description}{\small Ticket procuring and selling platform with millions as turnover. My tasks include
 \begin{itemize}
-\item Designing and implementing anti-price cawling system.
+\item Designing and implementing anti-price crawling system.
 \item Creating custom reports for customer.
 \item Mobile website for the same using bootstrap.
-\item Bug fixes and Maintainence support.
+\item Bug fixes and Maintenance support.
 \end{itemize}
 }
 
-\cvline{}{\textbf{Geotagger} | Drupal, Entities}
+\cvline{}{\textbf{Geotagger} | Drupal 7, Entities}
 \cvline{Organization}{Zyxware Technologies Private Limited}
 \cvline{Description}{\small Mobile application to take photos along with geolocation. Connects to any drupal website using REST API (one custom module). My tasks include
 \begin{itemize}
@@ -165,7 +225,7 @@
 \end{itemize}
 }
 
-\cvline{}{\textbf{High end audio products information and selling platform} | Drupal, Ubercart}
+\cvline{}{\textbf{High end audio products information and selling platform} | Drupal 7, Ubercart}
 \cvline{Organization}{Zyxware Technologies Private Limited}
 \cvline{Description}{\small Producer of high end audio devices. Mainly informational website with cool graphics. My tasks include
 \begin{itemize}
@@ -183,20 +243,20 @@
 \cvline{Organization}{Hello Infinity Business Solutions Private Limited}
 \cvline{Description}{\small Top level design of the whole CRM \& Framework. Also done some important modules on this.}
 
-\cvline{}{\textbf{Automation of Cloudamaze Webhosting} | WHMCS, WHM/cPanel, Payzippy}
+\cvline{}{\textbf{Automation of Cloudamaze Webhosting} | WHMCS, WHM/cPanel, Payzippy} % TODO: Reconsider
 \cvline{Organization}{Hello Infinity Business Solutions Private Limited}
 \cvline{Description}{\small Automated the hosting \& domain purchases, billing, etc of Cloudamaze.}
 
 \cvline{}{\textbf{Firewall \& Networking Infrastructure setup} | pfsense, Owncloud, samba}
 \cvline{Organization}{Marunadan Malayali}
-\cvline{Description}{\small Increased productivity using super fault tolerant internet connection setup using loadbalancing with pfsense firewall. Upgraded whole infrastucture to be easily manageable.}
+\cvline{Description}{\small Increased productivity using super fault tolerant Internet connection setup using loadbalancing with pfsense firewall. Upgraded whole infrastructure to be easily manageable.}
 
 \section{Community}
 
-\cvline{SMC}{\small Executive commitee member of Swatantra Malayalam Computing, which works on Indian language computing area.}
-\cvline{FUEL}{\small Part of the expert commitee on standardization of malayalam technical glossary.}
-\cvline{GNOME}{\small GNOME commiter (for malayalam localization) and foundation member.}
-\cvline{Mozilla}{\small Active contributor for Malayalam translation of Firefox, Firefox OS and Firefox Mobile.}
+\cvline{SMC}{\small Executive committee member of Swatantra Malayalam Computing, which works on Indian language computing area.}
+\cvline{FUEL}{\small Part of the expert committee on standardization of Malayalam technical glossary.}
+\cvline{GNOME}{\small GNOME commiter (for Malayalam localization) and foundation member.}
+\cvline{Mozilla}{\small Active contributor for Malayalam translation of Firefox and Firefox Mobile.}
 \cvline{savepoddery}{\small Major role in organizing crowd funding campaign for saving poddery.com.}
 \cvline{debian}{\small Debian package maintainer. Maintains few ruby libraries as a part of diaspora packaging.}
 
@@ -211,14 +271,15 @@ Engineering}{Mohandas College of Engineering and Technology}{Thiruvananthapuram}
 \section{Outside Work}
 \cvline{Conferences}{I can be found at many free software related conferences as speaker or otherwise.}
 \cvline{Community}{Attending and organizing various community activities.}
-\cvline{Travel}{A long distance ride at my beloved Passion Pro a month.}
-\cvline{Rubiks}{I can be found solving rubiks cube and some of the variants.}
+\cvline{Travel}{Long distance rides at my motorbike \& other travels.}
+\cvline{Rubiks}{Can solve a 3x3 Rubiks cube in one minute \& other variants in reasonable time.}
 
 \section{Personal Information}
 \cvline{Date of Birth}{7 April, 1990}
 \cvline{Sex}{Male}
 \cvline{Blood Group}{A+ve}
 \cvline{Languages}{Malayalam(Mother Tongue), English, Hindi (Basic), Tamil (can speak)}
+\cvline{Nationality}{Indian (Passport details available on request)}
 
 \end{document}
 
