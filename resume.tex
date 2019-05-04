@@ -8,124 +8,85 @@
 
 \documentclass[12pt,a4paper,sans]{moderncv}
 
-% moderncv themes
-%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[red]{classic}                % idem
 
 \moderncvstyle{classic}
-\moderncvcolor{red}
+\moderncvcolor{blue}
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3cm} %TODO: Adjust						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+\usepackage[scale=0.8, margin=1cm]{geometry}
+\setlength{\hintscolumnwidth}{2cm} %TODO: Adjust						% if you want to change the width of the column with the dates
 
 % personal data
 \firstname{Anish}
-\familyname{A}
+\familyname{Anilkumar}
 %\title{Acquia Certified Drupal Developer}               % optional, remove the line if not wanted
-\address{Anugraha, SMN-52, Konchiravila, Manacaud P. O.}{Thiruvananthapuram-695009, Kerala, India}
-\mobile{+91-8907509611}                    % optional, remove the line if not wanted
+%\address{\#01-04, 18 Lim Ah Pin Road, Singapore - 547837}{}
+\mobile{+65-83017408}                    % optional, remove the line if not wanted
 % \phone{+91-471-2459094}                      % optional, remove the line if not wanted
-%\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{aneesh.nl@gmail.com}                      % optional, remove the line if not wanted
-%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{Freedom is elixir, Freedom is life\\ For people with self-respect,\\ Dependence is worse than death.\\
-%\begin{small}
-%\textit{- Kumaranasan}
-%\end{small}}
-%\quote{For detailed online version - anishsheela.com/resume }
+\social[linkedin]{anishanil}
+\social[github]{anishsheela}
 
-% to show numerical labels in the bibliography; only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+\vspace*{-2\baselineskip}
 \maketitle
+\vspace{-1.5\baselineskip}
 
 % TODO: Update section.
-\section{Drupal Specific Skills}
-\cvline{Certification}{\textbf{Acquia Certified Drupal 8 Foundations Exam - 87.5\%}}
-\cvline{Expertise}{
+
+\section{Objectives}
 \begin{itemize}
-\item Drupal 8
-\item Multilingual sites, Entities, REST API design, Drupal Commerce
-\item Theming - Bootstrap, Responsive designs, Sass, etc.
-\item Custom module development.
-\item Deployment, Scaling, Maintenance.
-\item Debugging, Coding standards, Best practices, etc.
+\item To architect challenging solutions and infrastructure that are scalable and reliable.
 \end{itemize}
-}
 
-\cvline{Community}{
-\begin{itemize}
-\item \textbf{https://www.drupal.org/u/anish.a}
-\item \textbf{https://github.com/anishsheela}
-\item Current maintainer of search404, owlcarousel (D8), csv\_txt\_formatter.
-\item Ported or contributed on owlcarousel, disable\_messages, etc.
-\item Core contributor.
-\item \#1 in Malayalam localization.
-\item DrupalCon - Drupal Asia 2016
-\item DrupalCamp - Pune, Hyderabad, Delhi \& Bangalore
-\item FOSSAsia Singapore - Volunteer
-\end{itemize}
-}
-
-\section{Technical Skills}
-\cvline{Operating System}{GNU/Linux, Mainly Debian based distros}
-\cvline{Programing Languages}{PHP, Python, C, Ruby}
-\cvline{Database}{MySQL}
-\cvline{Version Control}{git}
-\cvline{Web}{HTML, CSS, Javascript, Bootstrap, Wordpress}
-\cvline{Utilities}{GIMP, Libre Office, \LaTeX}
-\cvline{Server}{More than 5 years expertise in setting up various application servers.}
-%\cvline{Hardware}{Good experience in hardware troubleshooting, advanced networking etc.}
-%\cvline{Pursuing}{Ruby on Rails, Linux foundation system admin certification}
-
-
-\section{My Superpowers}
-\cvline{Fast Learner}{I can learn anything easily and in minimum time.}
-\cvline{Problem Solver}{I can fix bugs \& issues fast.}
-\cvline{Basics}{I know how things work, from the basics.}
-\cvline{Social}{A well networked person whom many considers as their first 'goto' block.}
-\cvline{Community}{Actively involved in community activities \& projects.}
+\section{Certifications}
+\cvline{AWS}{\textbf{AWS Certified Cloud Practictioner}}
+\cvline{Acquia}{\textbf{Acquia Certified Drupal 8 Foundations Exam}}
 
 \section{Work Experience}
 
-\subsection{Axelerant Technologies}
+\subsection{Accenture Pte Ltd, Singapore}
+\cvline{URL}{https://www.accenture.com}
+\cvline{Job Title}{Senior Analyst}
+\cvline{Duration}{2018 January - Present}
+\cvline{}{
+\begin{itemize}
+\item Subject Matter Expert in Drupal CMS.
+\item Interacting with clients for requirements and conveying solutions.
+\item Providing consultations to other teams on scaling, server configurations.
+\item Optimizing the infrastructure and improving perfomance.
+\item Preparing detailed technical design of projects.
+\item Mentoring junior developers.
+\item \textit{Skills Used}: \textbf{Drupal 8, ReactJs, MySQL, Redis, NodeJS}
+\end{itemize}
+}
+
+\subsection{Axelerant Technologies Private Limited}
 \cvline{URL}{https://www.axelerant.com}
 \cvline{Job Title}{Drupal Developer}
-\cvline{Duration}{2016 July - Present}
-\cvline{Job Description}{Drupal technology expert. I was responsible for the following.
+\cvline{Duration}{2016 July - 2017 October}
+\cvline{}{
 \begin{itemize}
-\item Working on Drupal 7 \& 8 projects.
-\item Maintaining large scale D7 projects.
+\item Maintaining large scale Drupal 7 \& 8 projects.
 \item Architect and develop D8 projects from scratch.
 \item Working with self organized agile teams.
-\item Handling deployments using docker.
 \item Working with testing team for implementation of automated testing (behat).
-\item Working on hiring committee \& take decision on new candidates.
+\item Part of hiring committee to interview and take decision on candidates.
+\item \textit{Skills Used}: \textbf{Drupal 8, Behat, HTML, CSS, Javascript, Linux}
 \end{itemize}
 }
 
 \subsection{Zyxware Technologies Private Limited}
-\cvline{URL}{http://www.zyxware.com}
+\cvline{URL}{https://www.zyxware.com}
 \cvline{Job Title}{Senior Software Engineer}
 \cvline{Duration}{2014 August - 2016 July}
-\cvline{Job Description}{Drupal technology expert. I was responsible for the following.
+\cvline{}{Drupal technology expert. I was responsible for the following.
 \begin{itemize}
 \item Working on small to large drupal projects.
 \item Domain expert on e-commerce and multilingual websites.
@@ -133,153 +94,71 @@
 \item Product design and development from scratch.
 \item Leading a team of 5 people on drupal community contributions.
 \item Working with clients on the role of domain expert.
-\item Interviewing and make decision on hiring new candidates.
+\item \textit{Skills Used}: \textbf{Drupal 7, HTML, CSS, Javascript, Linux}
 \end{itemize}
 }
 
 \subsection{Hello Infinity Business Solutions Private Limited}
-\cvline{URL}{http://www.helloinfinity.com}
+\cvline{URL}{https://www.helloinfinity.com}
 \cvline{Job Title}{Co-Founder \& Technical Lead}
 \cvline{Duration}{2012 June - 2014 August}
-\cvline{Job Description}{We started the company while final year of college. Me as a co-founder \& Technical lead, was responsible for the following.
+\cvline{}{
 \begin{itemize}
 \item Handling all technology decisions for company.
 \item Managing servers \& Infrastructure.
 \item Ensure timely closure of projects.
 \item Bringing new business to company.
-\item Coordinating free software contributions and keeping touch with community.
+\item \textit{Skills Used}: \textbf{PHP, Python, MySQL, Wordpress, Linux}
 \end{itemize}
 }
-
-\section{Projects}
-
-\cvline{}{\textit{Important projects, reverse chronologically sorted}}
-
-\cvline{}{\textbf{Contract management with workflow} | Drupal 8}
-\cvline{Organization}{Axelerant Technologies}
-\cvline{Description}{\small Contract management system with workflow and document management. My tasks include
-\begin{itemize}
-\item Take part in architectural design of the project.
-\item Implement the project creation, validation according to requirements
-\item Setting up development environments and workflow.
-\end{itemize}
-}
-
-\cvline{}{\textbf{Medical device advertorial website} | Drupal 8}
-\cvline{Organization}{Axelerant Technologies}
-\cvline{Description}{\small Website that includes all information on particular medical product. My tasks include
-\begin{itemize}
-\item Take part in architectural design of the project.
-\item Implementing the project backend.
-\item Setting up development environments and workflow.
-\item Deploying the project in Acquia cloud.
-\item Handling client queries and making sure the site is rules complaint.
-\end{itemize}
-}
-
-
-\cvline{}{\textbf{Charity website maintenance} | Drupal 7}
-\cvline{Organization}{Axelerant Technologies}
-\cvline{Description}{\small Maintenance of foreign charity website with millions in donations and worldwide presence. My tasks include
-\begin{itemize}
-\item Establish formal developer workflow.
-\item Setting up development environments.
-\item Fix issues raised by client.
-\item Development of new features.
-\item Refactoring existing codebase.
-\item Assistance for automated testing to testing team.
-\end{itemize}
-}
-
-
-\cvline{}{\textbf{e-Tendering system for foreign government} | Drupal 7}
-\cvline{Organization}{Zyxware Technologies Private Limited}
-\cvline{Description}{\small Multilingual e-Tendering system with provision to publish specifications and accept bids. My tasks include
-\begin{itemize}
-\item Fix major bugs and refactor the code.
-\item Add new functionalities, without disturbing existing ones.
-\item Fixing all multilingual issues (localization, internationalization).
-\item Communicating with client and other stakeholders.
-\end{itemize}
-}
-
-\cvline{}{\textbf{Event ticket selling platform} | Drupal 7, Drupal Commerce}
-\cvline{Organization}{Zyxware Technologies Private Limited}
-\cvline{Description}{\small Ticket procuring and selling platform with millions as turnover. My tasks include
-\begin{itemize}
-\item Designing and implementing anti-price crawling system.
-\item Creating custom reports for customer.
-\item Mobile website for the same using bootstrap.
-\item Bug fixes and Maintenance support.
-\end{itemize}
-}
-
-\cvline{}{\textbf{Geotagger} | Drupal 7, Entities}
-\cvline{Organization}{Zyxware Technologies Private Limited}
-\cvline{Description}{\small Mobile application to take photos along with geolocation. Connects to any drupal website using a custom module via REST API. My tasks include
-\begin{itemize}
-\item Requirement collection and preparation of SRS.
-\item Technical design of the mobile \& webapp.
-\item Implementation with entities, custom fields, gmaps, REST API, etc.
-\item Supporting team on further extension of the system.
-\end{itemize}
-}
-
-\cvline{}{\textbf{High end audio products information and selling platform} | Drupal 7, Ubercart}
-\cvline{Organization}{Zyxware Technologies Private Limited}
-\cvline{Description}{\small Producer of high end audio devices. Mainly informational website with cool graphics. My tasks include
-\begin{itemize}
-\item Convert existing site to responsive design using bootstrap.
-\item Refactoring the code to make it maintainable.
-\item Additional functionalities requested by client.
-\end{itemize}
-}
-
-\cvline{}{\textbf{IFFK film festival registration management} | Eventival}
-\cvline{Organization}{Kerala Film Academy}
-\cvline{Description}{\small Technical consultant to handle registration process, printing \& distribution of badges for around 17,000 delegates in International Film Festival, Kerala.}
-
-\cvline{}{\textbf{FishInGlass cloud based CRM} | PHP, Custom Framework, Python}
-\cvline{Organization}{Hello Infinity Business Solutions Private Limited}
-\cvline{Description}{\small Top level design of the whole CRM \& Framework. Also done some important modules and interfacing with hardware using python.}
-
-\cvline{}{\textbf{Automation of Cloudamaze webhosting} | WHMCS, WHM/cPanel, Payzippy}
-\cvline{Organization}{Hello Infinity Business Solutions Private Limited}
-\cvline{Description}{\small Automated the hosting \& domain purchases, billing, etc of Cloudamaze and saved significant maintenance overhead.}
-
-\cvline{}{\textbf{Firewall \& Networking Infrastructure setup} | pfsense, Owncloud, samba}
-\cvline{Organization}{Marunadan Malayali}
-\cvline{Description}{\small Increased productivity using super fault tolerant Internet connection setup using loadbalancing with pfsense firewall. Upgraded whole computing infrastructure to be easily manageable.}
-
-\section{Community}
-
-\cvline{SMC}{\small Executive committee member of Swatantra Malayalam Computing, which works on Indian language computing area.}
-\cvline{FUEL}{\small Part of the expert committee on standardization of Malayalam technical glossary.}
-\cvline{GNOME}{\small GNOME commiter (for Malayalam localization) and foundation member.}
-\cvline{Mozilla}{\small Active contributor for Malayalam translation of Firefox and Firefox Mobile.}
-\cvline{savepoddery}{\small Major role in organizing crowd funding campaign for saving poddery.com.}
-\cvline{debian}{\small Debian package maintainer. Maintains few ruby libraries as a part of diaspora packaging.}
-
 
 \section{Education}
-\cventry{2008--2012}{Bachelor of Technology in Computer Science and
-Engineering}{Mohandas College of Engineering and Technology}{Thiruvananthapuram}{CGPA \textit{6.8}}
+\cventry{2008--2012}{B.Tech in Computer Science and
+Engineering}{Mohandas College of Engineering and Technology}{}{University of Kerala}
 {}
-\cventry{2006--2008}{Higher Secondary}{Govt: S.M.V Model Higher Secondary School}{Thiruvananthapuram}{\textit{82\%}}{}
-\cventry{2000--2006}{School}{St. Joseph's Higher Secondary School}{Thiruvananthapuram}{\textit{77\%}}{}
 
-\section{Outside of Work}
-\cvline{Conferences}{I can be found at many free software related conferences as speaker or otherwise.}
-\cvline{Community}{Attending and organizing various community activities.}
-\cvline{Travel}{Long distance rides at my motorbike \& other travels.}
-\cvline{Rubiks}{Can solve a 3x3 Rubiks cube in one minute \& other variants in reasonable time.}
+\section{Opensource contributions}
 
-\section{Personal Information}
-\cvline{Date of Birth}{7 April, 1990}
-\cvline{Sex}{Male}
-\cvline{Blood Group}{A+ve}
-\cvline{Languages}{Malayalam(Mother Tongue), English, Hindi (Basic), Tamil (Basic)}
-\cvline{Nationality}{Indian}
+\subsection{Mozilla}
+\cvline{Position}{Localization Manager for Malayalam, Mozilla Rep, \textit{in process}}
+\cvline{}{
+\begin{itemize}
+\item Took initiative and completed localization of various Mozilla projects such as Firefox, FirefoxOS, Firefox Rocket, Mozilla.org, etc.
+\item Co-ordinating contributions and mentoring new contributors.
+\item Initiated CommonVoice for Malayalam, which plans to develop a public voice corpus for speech recognition.
+\item Communicating with Mozilla staff on behalf of community.
+\end{itemize}
+}
+
+\subsection{Drupal}
+\cvline{}{
+\begin{itemize}
+\item Maintained various Drupal modules and themes.
+\item Bugfixes and minor contributions in Drupal 8 core.
+\item Spoken and participated in events and conferences.
+\end{itemize}
+}
+
+\subsection{Swathantra Malayalam Computing}
+\cvline{URL}{https://www.smc.org.in}
+\cvline{}{
+\begin{itemize}
+\item Long time contributor and mentor.
+\item Organized various events on behalf of community.
+\item Part of the expert committee on standardization of Malayalam technical glossary.
+\item Backup Admin for Google Summer of Code 2014.
+\item GNOME Foundation member representing SMC.
+\end{itemize}
+}
+
+\subsection{Others}
+\cvline{}{
+\begin{itemize}
+\item Opensource PHP Library for resellerclub - github.com/anishsheela/phpresellerclub
+\item International Film Festival of Kerala - Technology Consultant, 2015-2016
+\item International Documentary Film Festival of Kerala - Technology Consultant, 2014
+\end{itemize}
+}
 
 \end{document}
 
