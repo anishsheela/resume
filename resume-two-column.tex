@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%
+% This is a two-column CV template based on moderncv.cls
+% (v1.0, May 16 2024) written by Genki Ogaki (rockstarogk@gmail.com). Compiles with XeLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+% environment
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{banking}
+\nopagenumbers{}
+
+\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{mathpazo}
+
+% macro
+\renewcommand*{\labelitemi}{-}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\newcommand*{\experienceentry}[5][1.5mm]{
+    \subsection{#2} \vspace{-1.5mm}
+    \begin{tabularx}{\textwidth}{LR}
+        {\itshape #3} & {\itshape #4, #5}
+    \end{tabularx}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\educationentry}[4][0.5mm]{
+    \begin{tabularx}{\textwidth}{LR}
+        {\bfseries #3}\\
+    \end{tabularx}
+    {\itshape #2}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\scoreentry}[1][2.5mm]{
+    \par\addvspace{#1}
+}
+
+% preamble
+\firstname{Anish}
+\familyname{Anilkumar}
+\address{Kerala, India}{}
+
+% document
+\begin{document}
+\maketitle
+\vspace{-9.0mm}
+\begin{tabularx}{\textwidth}{C C C}
+    \emailsymbol\enspace \emaillink{aneesh.nl@gmail.com} & \mobilephonesymbol\enspace (+91) 96202-63587 & \faLinkedin\enspace \href{https://www.linkedin.com/in/anishanil/}{linkedin.com/in/anishanil}
+\end{tabularx}
+\vspace{-2.0mm}
+
+% left column
+\begin{minipage}[t]{0.62\textwidth}
+\section{EXPERIENCE}
+\experienceentry{Meta}{Fullstack Engineer, Contracted by Alpha Net, SG}{2023 March - 2023 October}{Singapore}
+
+\begin{itemize}
+    \item Upkeep of internal web tools to ensure strict adherence to privacy compliance standards.
+    \item Rebuilt three legacy functionalities through the implementation of modern methods.
+    \item Contributed to the Facebook codebase by implementing and pushing 90 crucial changes during the tenure.
+    \item Changes in project scope lead to the early termination of the contract.
+\end{itemize}
+\vspace{1.0mm}
+
+\experienceentry{Credit Agricole Corporate and Investment Bank}{Software Engineer, Contracted by Adecco Personnel, SG}{2022 May - 2023 March}{Singapore}
+
+\begin{itemize}
+    \item Oversaw the maintenance of corporate website.
+    \item Rebuilt the corporate website, using NextJS and Drupal 9, improving performance and accessibility.
+    \item Implemented an automated deployment process for internal portals through Jenkins, saving build time.
+    \item Applied data science methodologies to rectify data issues within the corporate website.
+\end{itemize}
+\vspace{1.0mm}
+
+\experienceentry{QBurst Technologies}{Lead Engineer}{2020 August - 2022 May}{India}
+
+\begin{itemize}
+\item Led and directed a team of six developers, demonstrating strong leadership and management skills.
+\item Lead development of a web portal featuring a progressive web app using ReactJS, coupled with custom maps.
+\item Implemented build automation for Drupal and ReactJS through the implementation of Acquia pipelines and Jenkins.
+\item Undertook responsibilities including conducting interviews, providing estimations for new projects, and other managerial tasks.
+\end{itemize}
+
+\experienceentry{Accenture}{Lead Engineer}{2018 January - 2020 August}{SG}
+\experienceentry{Axelerant Technologies}{Software Engineer}{2016 July - 2017 September}{India}
+\experienceentry{Zyxware Technologies}{Senior Software Engineer}{2014 August - 2016 July}{India}
+\experienceentry{Hello Infinity Business Solutions}{Co-Founder \& Technical Lead}{2012 June - 2014 August}{India}
+
+\end{minipage}
+\hfill
+% right column
+\begin{minipage}[t]{0.35\textwidth}
+\section{SUMMARY}
+With 12 years of experience in software engineering, I specialise in complex web app development and building scalable infrastructure for millions of users. I have led teams and worked solo. I am seeking full stack web development roles.
+
+\section{SKILLS}
+\begin{tabularx}{\textwidth}{>{\bfseries}l@{\hskip 3.5mm}L}
+Back End & PHP, Python, Drupal, APIs \\
+Front End & React.Js, NextJS, Tailwind, GraphQL, Typescript, Flow \\
+DBMS & MySQL, PostgreSQL \\
+OS & Linux, macOS \\
+DevOps & Docker, Jenkins \\
+Misc. & AWS, \LaTeX 
+\end{tabularx}
+
+\section{EDUCATION}
+\educationentry{B.Tech - Computer Science \& Engineering}{University of Kerala}{}
+
+\vspace{2.0mm}
+\educationentry{Micromasters - Statistics and DataScience}{MITx}{}
+
+\section{CERTIFICATIONS}
+\scoreentry{Acquia Certified Drupal 8}{}
+\scoreentry{AWS Certified Cloud Practiciioner}{}
+\scoreentry{Datacamp certifications}{}
+
+\section{OPENSOURCE}
+\begin{itemize}
+    \item github.com/anishsheela
+    \item drupal.org/u/anish.a
+    \item Language Computing
+    \item Talked in conferences
+\end{itemize}
+
+\section{LANGUAGES}
+\begin{itemize}
+    \item Malayalam (Native)
+    \item English (Advanced)
+    \item Tamil (Intermediate)
+    \item Hindi (Basic)
+    \item French (Basic)
+\end{itemize}
+\end{minipage}
+
+\end{document}
